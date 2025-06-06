@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عید مبارک 🎉</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Nastaliq Urdu', serif;
+      background: radial-gradient(circle at center, #fff8e7, #ffd1dc);
+      animation: bgPulse 10s ease-in-out infinite;
+    }
+
+    @keyframes bgPulse {
+      0%, 100% { background-color: #fff8e7; }
+      50% { background-color: #ffe4e1; }
+    }
+
+    .fadeIn {
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .bounce {
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .confetti {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      background-image: url('https://cdn.pixabay.com/photo/2014/04/03/10/32/confetti-311872_960_720.png');
+      background-repeat: repeat;
+      animation: fall 15s linear infinite;
+      opacity: 0.3;
+    }
+
+    @keyframes fall {
+      from { background-position: 0 -100vh; }
+      to { background-position: 0 100vh; }
+    }
+
+    .glow {
+      animation: glowPulse 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glowPulse {
+      from { text-shadow: 0 0 10px #ffc107; }
+      to { text-shadow: 0 0 20px #ff5722; }
+    }
+  </style>
+</head>
+<body class="font-sans text-center p-4 sm:p-8 text-gray-800">
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    آپ کا براؤزر آڈیو عنصر کی حمایت نہیں کرتا۔
+  </audio>
+
+  <div class="confetti"></div>
+
+  <h1 class="text-4xl sm:text-5xl font-bold text-green-700 mb-4 bounce glow">🌙 عید مبارک!</h1>
+  <p class="text-lg sm:text-xl mb-6 fadeIn">یہ عید آپ کے لیے خوشیاں، سکون اور خوشحالی لے کر آئے ✨</p>
+
+  <div class="max-w-xl mx-auto bg-white/80 p-6 rounded-2xl shadow-2xl border-4 border-pink-200 fadeIn">
+    <h2 class="text-2xl font-semibold text-green-800 mb-4">🌟 خصوصی دعائیں</h2>
+    <ul class="text-right space-y-3 list-disc list-inside text-green-700">
+      <li>اللہ آپ کے گھر کو خوشیوں سے بھر دے۔</li>
+      <li>آپ اور آپ کے خاندان کو عید کی بہت مبارکباد۔</li>
+      <li>آئیں ہم سب محبت اور خلوص سے اس عید کو منائیں۔</li>
+      <li>دعا ہے کہ یہ عید ہمارے دلوں میں امن اور محبت پیدا کرے۔</li>
+      <li>ہمیشہ مسکراتے رہیں اور دوسروں کو خوشی دیں۔</li>
+    </ul>
+    <p class="mt-4 text-pink-700">🎁 آج کسی کو معاف کر کے عید کو مزید خاص بنائیں!</p>
+    <p class="text-pink-700">📸 اپنوں کے ساتھ تصویریں کھینچیں، لمحات محفوظ کریں!</p>
+  </div>
+
+  <footer class="mt-10 text-sm text-gray-500">
+    پسِ منظر موسیقی: SoundHelix | عید تھیم<br>
+    ویب سائٹ: <a class="text-blue-500 underline" href="#">آپ کا بلاگ لنک</a>
+  </footer>
+</body>
+</html>
